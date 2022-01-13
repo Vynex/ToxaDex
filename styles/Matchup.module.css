@@ -29,6 +29,48 @@
       rgba(0, 0, 0, 0.23) 0px 6px 6px;
 
    display: flex;
-   justify-content: center;
+   flex-direction: column;
+}
+
+.category {
+   font-size: 1.2rem;
+   color: #404040;
+}
+
+.types {
+   width: 100%;
+   margin: 1rem 0;
+
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.typeContainer {}
+
+.typeContainer>div {
+   height: 40px;
+   width: 40px;
+
+   display: flex;
+   align-items: center;
+}
+
+.typeValue {
+   position: relative;
+   top: -37.5px;
+   left: 0.9rem;
+
+   height: 35px;
+   width: 4.5rem;
+
+   border-radius: 20px;
+
+   color: #fff;
+   font-size: 0.6rem;
+   font-weight: 300;
+   background-color: #404040;
+
+   display: flex;
+   justify-content: flex-end;
    align-items: center;
 }

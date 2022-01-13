@@ -47,7 +47,7 @@ const Navbar = () => {
 			<div className={styles.links}>
 				<BsChevronLeft className={styles.arrow} onClick={handleLeft} />
 				{links.map((link, idx) => (
-					<Link key={idx} href={`/${link}`}>
+					<Link key={idx} href={`/dex/${link}`}>
 						<a
 							className={`${styles.link} ${
 								link === current && styles.active

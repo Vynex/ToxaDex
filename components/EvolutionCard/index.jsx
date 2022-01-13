@@ -14,7 +14,7 @@ const PokemonIcon = ({ name, id, multi, borderColor }) => {
 			style={borderStyle}
 		>
 			<Image src={getFrontSprite(id)} alt={name} height={110} width={110} />
-			<Link href={`/${id}`}>
+			<Link href={`/dex/${id}`}>
 				<a>{name}</a>
 			</Link>
 		</div>

@@ -5,6 +5,8 @@
 
    background-color: #fff;
    border-radius: 50%;
+
+   z-index: 1;
 }
 
 .type:hover {
@@ -13,6 +15,7 @@
 
 .label {
    position: relative;
+   color: #fff;
 
    transition: all .25s ease-in-out;
    cursor: pointer;
@@ -57,7 +60,6 @@
 
 .bug {
    background-color: #92BC2C;
-   color: #fff;
 
    background-image: url('../public/assets/types/bug.svg');
    background-position: 50%;
@@ -69,7 +71,6 @@
 
 .dark {
    background-color: #595761;
-   color: #fff;
 
    background-image: url('../public/assets/types/dark.svg');
    background-position: 50%;
@@ -81,7 +82,6 @@
 
 .dragon {
    background-color: #0C69C8;
-   color: #fff;
 
    background-image: url('../public/assets/types/dragon.svg');
    background-position: 50%;
@@ -93,7 +93,6 @@
 
 .electric {
    background-color: #F2D94E;
-   color: #000;
 
    background-image: url('../public/assets/types/electric.svg');
    background-position: 50%;
@@ -105,7 +104,6 @@
 
 .fire {
    background-color: #FBA54C;
-   color: #fff;
 
    background-image: url('../public/assets/types/fire.svg');
    background-position: 50%;
@@ -117,7 +115,6 @@
 
 .fairy {
    background-color: #EE90E6;
-   color: #000;
 
    background-image: url('../public/assets/types/fairy.svg');
    background-position: 50%;
@@ -129,7 +126,6 @@
 
 .fighting {
    background-color: #D3425F;
-   color: #fff;
 
    background-image: url('../public/assets/types/fighting.svg');
    background-position: 50%;
@@ -141,7 +137,6 @@
 
 .flying {
    background-color: #A1BBEC;
-   color: #fff;
 
    background-image: url('../public/assets/types/flying.svg');
    background-position: 50%;
@@ -153,7 +148,6 @@
 
 .ghost {
    background-color: #5F6DBC;
-   color: #fff;
 
    background-image: url('../public/assets/types/ghost.svg');
    background-position: 50%;
@@ -165,7 +159,6 @@
 
 .grass {
    background-color: #5FBD58;
-   color: #fff;
 
    background-image: url('../public/assets/types/grass.svg');
    background-position: 50%;
@@ -177,7 +170,6 @@
 
 .ground {
    background-color: #DA7C4D;
-   color: #fff;
 
    background-image: url('../public/assets/types/ground.svg');
    background-position: 50%;
@@ -189,7 +181,6 @@
 
 .ice {
    background-color: #75D0C1;
-   color: #000;
 
    background-image: url('../public/assets/types/ice.svg');
    background-position: 50%;
@@ -201,7 +192,6 @@
 
 .normal {
    background-color: #A0A29F;
-   color: #000;
 
    background-image: url('../public/assets/types/normal.svg');
    background-position: 50%;
@@ -213,7 +203,6 @@
 
 .poison {
    background-color: #B763CF;
-   color: #fff;
 
    background-image: url('../public/assets/types/poison.svg');
    background-position: 50%;
@@ -225,7 +214,6 @@
 
 .psychic {
    background-color: #FA8581;
-   color: #fff;
 
    background-image: url('../public/assets/types/psychic.svg');
    background-position: 50%;
@@ -237,7 +225,6 @@
 
 .rock {
    background-color: #C9BB8A;
-   color: #fff;
 
    background-image: url('../public/assets/types/rock.svg');
    background-position: 50%;
@@ -249,7 +236,6 @@
 
 .steel {
    background-color: #5695A3;
-   color: #fff;
 
    background-image: url('../public/assets/types/steel.svg');
    background-position: 50%;
@@ -261,7 +247,6 @@
 
 .water {
    background-color: #539DDF;
-   color: #fff;
 
    background-image: url('../public/assets/types/water.svg');
    background-position: 50%;

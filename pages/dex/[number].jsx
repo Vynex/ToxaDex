@@ -46,6 +46,7 @@ const Pokemon = ({ pokemonData }) => {
 				: promColor[1];
 
 			setVibrantColor(bgColor);
+			document.body.style.backgroundColor = bgColor;
 		};
 		getPalette();
 	}, [pokemonData]);
@@ -80,10 +81,7 @@ const Pokemon = ({ pokemonData }) => {
 
 			<Navbar number={Number(dexNumber.slice(1))} />
 
-			<main
-				style={{ backgroundColor: vibrantColor }}
-				className={styles.main}
-			>
+			<main className={styles.main}>
 				<div className={styles.row}>
 					<section className={styles.meta}>
 						<div className={styles.dexId}>{dexNumber}</div>
@@ -141,20 +139,14 @@ const Pokemon = ({ pokemonData }) => {
 				</div>
 			</main>
 
-			<main
-				style={{ backgroundColor: vibrantColor }}
-				className={styles.main}
-			>
+			<main className={styles.main}>
 				<EvolutionCard
 					chain={pokemonData.evolutionChain}
 					color={vibrantColor}
 				/>
 			</main>
 
-			<main
-				style={{ backgroundColor: vibrantColor }}
-				className={styles.main}
-			>
+			<main className={styles.main}>
 				<div className={styles.row}>
 					<StatsCard stats={pokemonData.stats} />
 					<MatchupCard types={pokemonData.type} />
