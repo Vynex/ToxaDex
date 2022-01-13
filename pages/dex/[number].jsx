@@ -5,18 +5,18 @@ import Image from 'next/image';
 
 import { prominent, average } from 'color.js';
 import { useEffect, useState } from 'react';
-import { getPokemonData } from '../lib/pokemon';
+import { getPokemonData } from '../../lib/pokemon';
 
-import styles from '../styles/Pokemon.module.css';
-import Type from '../components/Type';
+import styles from '../../styles/Pokemon.module.css';
+import Type from '../../components/Type';
 
 import { BsChevronCompactDown } from 'react-icons/bs';
-import Navbar from '../components/Navbar';
+import Navbar from '../../components/Navbar';
 import { useRouter } from 'next/router';
-import EvolutionCard from '../components/EvolutionCard';
-import StatsCard from '../components/StatsCard';
+import EvolutionCard from '../../components/EvolutionCard';
+import StatsCard from '../../components/StatsCard';
 import tinycolor from 'tinycolor2';
-import MatchupCard from '../components/MatchupCard';
+import MatchupCard from '../../components/MatchupCard';
 
 const Pokemon = ({ pokemonData }) => {
 	const router = useRouter();
