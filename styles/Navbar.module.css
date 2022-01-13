@@ -1,0 +1,43 @@
+.navbar {
+   width: 100%;
+   padding: 0.6rem 0;
+
+   position: absolute;
+   top: 0;
+
+   display: flex;
+   justify-content: center;
+}
+
+.links {
+   display: flex;
+   align-items: center;
+}
+
+.links>* {
+   color: #fff;
+   text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.2);
+   transition: transform 150ms ease-in-out;
+}
+
+.links>*:hover,
+.link.active {
+   transform: scale(1.1);
+}
+
+.arrow {
+   margin: 0 0.8rem;
+
+   font-size: 1.4rem;
+   cursor: pointer;
+}
+
+.link {
+   margin: 0 0.6rem;
+   width: 1.2rem;
+
+   font-style: Nunito;
+   font-weight: 500;
+
+   user-select: none;
+}

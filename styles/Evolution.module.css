@@ -1,0 +1,119 @@
+.header {
+   color: #FFF;
+   font-size: 2rem;
+   font-weight: 800;
+   letter-spacing: 0.1rem;
+   text-shadow: 0 0 10px rgba(0, 0, 0, .5);
+}
+
+.card {
+   margin: 3rem 0;
+   padding: 1rem 1.5rem;
+
+   min-height: 25rem;
+   width: 100%;
+
+   font-weight: 600;
+   letter-spacing: 0.05rem;
+   color: #000;
+
+   border-radius: 10px;
+
+   background-color: rgba(255, 255, 255, 0.5);
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.group {
+   width: 100%;
+
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.group>svg,
+.multiGroup>svg {
+   margin-right: 1rem;
+   font-size: 2rem;
+   color: #fff;
+   filter: drop-shadow(1px 3px 1px rgb(0, 0, 0, 0.5));
+}
+
+.stage {
+   margin-left: 2rem;
+}
+
+.multiGroup {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+.multiStage {
+   width: 80%;
+
+   display: flex;
+   align-items: center;
+
+   flex-wrap: wrap;
+}
+
+.multiStage>div {
+   /* height: 125px;
+   width: 125px; */
+
+   flex-basis: 20%;
+}
+
+.pokemon {
+   height: 150px;
+   width: 150px;
+   margin: 1rem 0;
+
+   background-color: #fff;
+   border-radius: 50%;
+
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.pokemon>a {
+   color: rgba(0, 0, 0, .7);
+
+   font-size: 0.8rem;
+   font-family: 'Nunito Sans';
+   font-weight: 800;
+
+   margin-bottom: 0.7rem;
+}
+
+.pokemon>a:hover {
+   text-decoration: underline;
+   text-decoration-thickness: 2px;
+}
+
+.multiPokemon {
+   margin-left: 2rem;
+   flex: 0 0 auto;
+}
+
+
+
+
+
+/* 
+.group {
+   height: 100%;
+   width: 100%;
+
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+} */

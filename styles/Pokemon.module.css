@@ -1,0 +1,100 @@
+.main {
+   height: 100%;
+   padding: 4rem 8rem;
+
+   transition: background-color 700ms ease;
+}
+
+.row {
+   height: 100%;
+
+   display: flex;
+   justify-content: space-between;
+}
+
+.meta {
+   color: #FFF;
+   font-weight: 800;
+   text-shadow: 0 0 10px rgba(0, 0, 0, .25);
+}
+
+.dexId {
+   font-size: 1.2rem;
+}
+
+.name {
+   font-size: 2.7rem;
+}
+
+.category {
+   font-size: 1.1rem;
+}
+
+.types {
+   margin: 3rem 0;
+   display: flex;
+}
+
+.art {
+   margin-top: 3rem;
+}
+
+.image {
+   filter: drop-shadow(2px 2px 5px black);
+}
+
+.card {
+   margin: 5rem 0;
+   padding: 1rem 1.5rem;
+
+   /* height: 15rem; */
+   width: 25rem;
+
+   font-weight: 600;
+   letter-spacing: 0.05rem;
+   color: #000;
+
+   border-radius: 10px;
+
+   opacity: 0.5;
+   background-color: #fff;
+   box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+      rgba(0, 0, 0, 0.23) 0px 6px 6px;
+
+   display: flex;
+   justify-content: space-evenly;
+}
+
+.card div {
+   margin: 0.3rem;
+}
+
+.key {
+   margin-bottom: 0.5rem;
+   margin-right: 0.4rem;
+
+   font-size: 0.95rem;
+   color: #737373;
+}
+
+.ability {
+   margin: 0.3rem 0;
+   display: block;
+   /* white-space: pre-wrap; */
+}
+
+.abilityHidden {
+   letter-spacing: 0;
+   font-size: 0.7rem;
+}
+
+.arrow {
+   position: absolute;
+   bottom: 2rem;
+   left: 50%;
+
+   font-size: 3rem;
+   color: #fff;
+
+   filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
+}
