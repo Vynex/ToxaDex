@@ -45,9 +45,7 @@
    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
-.typeContainer {}
-
-.typeContainer>div {
+.typeContainer>button {
    height: 40px;
    width: 40px;
 
@@ -73,4 +71,10 @@
    display: flex;
    justify-content: flex-end;
    align-items: center;
+}
+
+@media only screen and (max-width: 1000px) {
+   .container {
+      margin-left: 0;
+   }
 }

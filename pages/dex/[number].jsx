@@ -84,38 +84,46 @@ const Pokemon = ({ pokemonData }) => {
 			<main className={styles.main}>
 				<div className={styles.row}>
 					<section className={styles.meta}>
-						<div className={styles.dexId}>{dexNumber}</div>
-						<div className={styles.name}>{name}</div>
-						<div className={styles.category}>{pokemonData.category}</div>
+						<div className={styles.identifier}>
+							<div>
+								<div className={styles.dexId}>{dexNumber}</div>
+								<div className={styles.name}>{name}</div>
+								<div className={styles.category}>
+									{pokemonData.category}
+								</div>
+							</div>
 
-						<div className={styles.types}>
-							{pokemonData.type.map((type, idx) => (
-								<Type key={idx} type={type.type.name} />
-							))}
+							<div className={styles.types}>
+								{pokemonData.type.map((type, idx) => (
+									<Type key={idx} type={type.type.name} />
+								))}
+							</div>
 						</div>
 
-						<div className={styles.card}>
-							<div>
-								<span className={styles.key}>Height</span>{' '}
-								<div>{pokemonData.height / 10}m</div>
-							</div>
-							<div>
-								<span className={styles.key}>Weight</span>{' '}
-								<div>{pokemonData.weight / 10}kg</div>
-							</div>
-							<div>
-								<span className={styles.key}>Abilities</span>{' '}
-								<div className={styles.abilities}>
-									{abilities.map((ability, idx) => (
-										<span className={styles.ability} key={idx}>
-											{ability.name}{' '}
-											{ability.isHidden && (
-												<span className={styles.abilityHidden}>
-													(Hidden)
-												</span>
-											)}
-										</span>
-									))}
+						<div className={styles.container}>
+							<div className={styles.card}>
+								<div>
+									<span className={styles.key}>Height</span>{' '}
+									<div>{pokemonData.height / 10}m</div>
+								</div>
+								<div>
+									<span className={styles.key}>Weight</span>{' '}
+									<div>{pokemonData.weight / 10}kg</div>
+								</div>
+								<div>
+									<span className={styles.key}>Abilities</span>{' '}
+									<div className={styles.abilities}>
+										{abilities.map((ability, idx) => (
+											<span className={styles.ability} key={idx}>
+												{ability.name}{' '}
+												{ability.isHidden && (
+													<span className={styles.abilityHidden}>
+														(Hidden)
+													</span>
+												)}
+											</span>
+										))}
+									</div>
 								</div>
 							</div>
 						</div>
@@ -133,9 +141,6 @@ const Pokemon = ({ pokemonData }) => {
 							/>
 						</div>
 					</section>
-				</div>
-				<div className={styles.arrow}>
-					<BsChevronCompactDown />
 				</div>
 			</main>
 

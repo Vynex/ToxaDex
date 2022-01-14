@@ -68,3 +68,17 @@
    border: 1px solid #000;
    /* filter: saturate(150%); */
 }
+
+@media only screen and (max-width: 1000px) {
+   .container {
+      margin-right: 0;
+   }
+
+   .card {
+      padding: 1rem 1.5rem;
+   }
+
+   .value {
+      margin: 0 0.25rem;
+   }
+}

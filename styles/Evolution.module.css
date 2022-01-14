@@ -107,3 +107,47 @@
    margin-left: 2rem;
    flex: 0 0 auto;
 }
+
+@media only screen and (max-width: 1000px) {
+   .group {
+      flex-direction: column;
+      margin: 0 0.5rem;
+   }
+
+   .stage {
+      margin-left: 0;
+      display: flex;
+   }
+
+   .stage .pokemon {
+      height: 125px;
+      width: 125px;
+   }
+
+   .group>svg,
+   .multiGroup>svg {
+      margin-right: 0;
+      transform: rotate(90deg);
+   }
+
+   .multiPokemon {
+      margin-left: 0;
+   }
+
+   .multiGroup {
+      flex-direction: column;
+   }
+
+   .multiStage {
+      width: 100%;
+      justify-content: space-evenly;
+   }
+
+   .multiStage>div {
+      /* margin: 0.5rem 0.5rem; */
+      height: 125px;
+      width: 125px;
+
+      flex-basis: 40%;
+   }
+}

@@ -41,3 +41,9 @@
 
    user-select: none;
 }
+
+@media only screen and (max-width: 1000px) {
+   .navbar {
+      display: none;
+   }
+}

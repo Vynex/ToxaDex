@@ -98,3 +98,44 @@
 
    filter: drop-shadow(3px 3px 2px rgba(0, 0, 0, .7));
 }
+
+
+@media only screen and (max-width: 768px) {
+   .main {
+      padding: 3rem 1.5rem;
+      padding-bottom: 0;
+   }
+
+   .art {
+      top: 0;
+      margin-top: 12rem;
+      position: absolute;
+   }
+
+   .identifier {
+      display: flex;
+      justify-content: space-between;
+   }
+
+   .types {
+      margin: 1.5rem 0;
+   }
+
+   .types>button {
+      margin: 0 0.4rem;
+   }
+
+   .container {
+      margin-top: 125%;
+   }
+
+   .row {
+      display: block;
+   }
+
+   .card,
+   .main,
+   .row {
+      width: 100%;
+   }
+}

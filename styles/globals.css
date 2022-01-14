@@ -7,6 +7,8 @@ body {
   padding: 0;
   margin: 0;
   font-family: 'Nunito Sans', sans-serif;
+
+  transition: background-color 200ms ease-in-out;
 }
 
 a {
@@ -18,6 +20,9 @@ a {
   box-sizing: border-box;
 }
 
-#__next {
-  height: 100%;
+
+@media only screen and (max-width: 1500px) {
+  body {
+    font-size: 14px;
+  }
 }
