@@ -14,6 +14,10 @@
    filter: saturate(200%);
 }
 
+.type:focus {
+   outline: none;
+}
+
 .label {
    position: relative;
    color: #fff;
@@ -261,7 +265,6 @@
 @media only screen and (max-width: 992px) {
    .type:focus {
       filter: saturate(200%);
-      outline: none;
    }
 
    .label:focus:before,

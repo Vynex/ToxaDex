@@ -5,7 +5,7 @@ import Image from 'next/image';
 
 import { prominent, average } from 'color.js';
 import { useEffect, useState } from 'react';
-import { getPokemonData } from '../../lib/pokemon';
+import { getFrontSprite, getHomeSprite, getPokemonData } from '../../lib/pokemon';
 
 import styles from '../../styles/Pokemon.module.css';
 import Type from '../../components/Type';
@@ -21,7 +21,15 @@ import MatchupCard from '../../components/MatchupCard';
 const Pokemon = ({ pokemonData }) => {
 	const router = useRouter();
 
-	const [name, setName] = useState('Loading');
+	const getName = (name) => {
+		let speciesName = name
+			.split('-')
+			.map((word) => word[0].toUpperCase() + word.slice(1))
+			.join(' ');
+		return speciesName;
+	};
+
+	const [name, setName] = useState(getName(pokemonData.species.name));
 	const [dexNumber, setDexNumber] = useState(
 		`#${String(router.query.number).padStart(3, '0')}`
 	);
@@ -52,12 +60,6 @@ const Pokemon = ({ pokemonData }) => {
 	}, [pokemonData]);
 
 	useEffect(() => {
-		let speciesName = pokemonData.species.name
-			.split('-')
-			.map((word) => word[0].toUpperCase() + word.slice(1))
-			.join(' ');
-		setName(speciesName);
-
 		setAbilities(
 			pokemonData.abilities.map((ability) => ({
 				name: ability.ability.name
@@ -67,15 +69,18 @@ const Pokemon = ({ pokemonData }) => {
 				isHidden: ability.is_hidden,
 			}))
 		);
-
-		// console.log(pokemonData);
 	}, [pokemonData]);
 
 	return (
 		<>
 			<Head>
+				<link
+					rel="shortcut icon"
+					type="image/x-icon"
+					href={getHomeSprite(Number(router.query.number))}
+				></link>
 				<title>
-					{dexNumber} | {name} | Toxadex
+					{dexNumber} | {name} | ToxaDex
 				</title>
 			</Head>
 

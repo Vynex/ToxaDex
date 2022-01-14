@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import getMatchups from '../../lib/matchups';
 import styles from '../../styles/Matchup.module.css';
 import Type from '../Type';
@@ -37,10 +37,6 @@ const Category = ({ name, types }) => {
 
 const MatchupCard = ({ types }) => {
 	const [matchups, setMatchups] = useState(getMatchups(types));
-
-	useEffect(() => {
-		// console.log(matchups);
-	}, [matchups]);
 
 	return (
 		<div className={styles.container}>
