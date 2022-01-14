@@ -5,7 +5,11 @@ import Image from 'next/image';
 
 import { prominent, average } from 'color.js';
 import { useEffect, useState } from 'react';
-import { getFrontSprite, getHomeSprite, getPokemonData } from '../../lib/pokemon';
+import {
+	getFrontSprite,
+	getHomeSprite,
+	getPokemonData,
+} from '../../lib/pokemon';
 
 import styles from '../../styles/Pokemon.module.css';
 import Type from '../../components/Type';
@@ -69,6 +73,8 @@ const Pokemon = ({ pokemonData }) => {
 				isHidden: ability.is_hidden,
 			}))
 		);
+
+		setName(getName(pokemonData.species.name));
 	}, [pokemonData]);
 
 	return (
