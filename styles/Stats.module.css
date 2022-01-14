@@ -54,6 +54,11 @@
    color: #666666;
 }
 
+.total {
+   font-weight: 700;
+   color: #545454;
+}
+
 .chartContainer {
    /* height: 1rem; */
    width: 100%;

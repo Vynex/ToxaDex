@@ -1,6 +1,17 @@
+import { useState } from 'react';
 import styles from '../../styles/Stats.module.css';
 
 const StatsCard = ({ stats }) => {
+	const getTotalStats = (stats) => {
+		let totalStats = 0;
+		stats.forEach((stat) => {
+			totalStats += stat.base_stat;
+		});
+		return totalStats;
+	};
+
+	const [totalStats, setTotalStats] = useState(getTotalStats(stats));
+
 	return (
 		<div className={styles.container}>
 			<div className={styles.header}>Base Stats</div>
@@ -89,6 +100,15 @@ const StatsCard = ({ stats }) => {
 							}}
 						></div>
 					</div>
+				</div>
+
+				<div className={styles.row}>
+					<span className={styles.label}>Total</span>
+					<span className={`${styles.value} ${styles.total}`}>
+						{totalStats}
+					</span>
+
+					<div className={styles.chartContainer}></div>
 				</div>
 			</div>
 		</div>

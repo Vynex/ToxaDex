@@ -86,7 +86,7 @@ const Pokemon = ({ pokemonData }) => {
 		onSwipedRight: () => handlePrev(),
 		onSwipedLeft: () => handleNext(),
 
-		delta: 200,
+		delta: 170,
 		preventDefaultTouchmoveEvent: false,
 		trackTouch: true,
 		trackMouse: false,
