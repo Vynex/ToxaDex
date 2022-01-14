@@ -1,7 +1,8 @@
 import { useState } from 'react';
+
+import Type from '../Type';
 import getMatchups from '../../lib/matchups';
 import styles from '../../styles/Matchup.module.css';
-import Type from '../Type';
 
 const TypeBadge = ({ name, multiplier }) => {
 	let padding = '1rem';

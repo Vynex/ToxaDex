@@ -1,9 +1,9 @@
+import Link from 'next/link';
 import Image from 'next/image';
 
+import { BsChevronRight } from 'react-icons/bs';
 import { getFrontSprite } from '../../lib/pokemon';
 import styles from '../../styles/Evolution.module.css';
-import { BsChevronRight } from 'react-icons/bs';
-import Link from 'next/link';
 
 const PokemonIcon = ({ name, id, multi, borderColor }) => {
 	const borderStyle = { outline: `4px solid ${borderColor}` };

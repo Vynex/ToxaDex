@@ -1,8 +1,8 @@
 import Link from 'next/link';
 import { useRouter } from 'next/router';
 import { useEffect, useState } from 'react';
-import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 
+import { BsChevronLeft, BsChevronRight } from 'react-icons/bs';
 import styles from '../../styles/Navbar.module.css';
 
 const Navbar = () => {
