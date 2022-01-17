@@ -2,7 +2,7 @@
 
 A PokéDex App built using Next.js and React. Uses the [PokéAPI](https://pokeapi.co/) directly to fetch data on all 898 Pokémon. Uses Static Site Generation for rendering all the pages.
 
-[Live on Vercel](https://toxadex.vercel.app)
+[Live on Vercel](https://toxadex.netlify.app)
 
 ---
 
